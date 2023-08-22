@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>samsung</title>
+    <style>/* nav bar */
+        nav {
+            background-color: #2874F0;
+        }
+        #search {
+        width: 700px;
+        height: 50px;
+        background-color: #f0f5ff;
+        border: none;
+        border-radius: 5px;
+        }
+        ul {
+            display:flex;
+            justify-content: space-around;
+            padding:10px;
+        }
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        /* margin-top:15px; */
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 160px;
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {background-color: #F0F5FF;}
+      .dropdown:hover .dropdown-content {display: block;}
+      .dropdown:hover .dropbtn {background-color:white;color:#2874F0}
+      .dropbtn{
+        background-color: #2874F0;
+        color:white;
+        padding:5px 10px;
+        border:none;
+        font-size: 15px;
+      }
+      .dropbt {
+        background-color: white;
+        border:none;
+      }
+      .dropbt:hover {
+        color:blue;
+      }
+      .signin {
+        background-color: #2874F0;
+        color:#fff;
+        text-decoration: none;
+      }
+      .signin:hover{
+        background-color: white;
+        color:#2874F0;
+      }
+      .asdfg, .dropb{
+        background-color: #2874F0;
+        color:#fff;
+        text-decoration: none;
+        margin-left: 30px;
+        border:none;
+      }
+      .asdfg:hover,.dropb:hover {
+        background-color: white;
+        color:#2874F0;
+      }
+      /* nav bar */
+      .categeories{
+            display:grid;
+            grid-template-columns:repeat(9, 1fr);
+            justify-content: space-around;
+            text-align: center;
+            margin:0px;
+            background-color: #fff;
+            padding:0px;
+      }
+      .total {
+        width:85vw;
+        margin-left: 5%;
+        display: flex;
+      }
+      .sub1{
+        width:40%;
+        background-color: #fff;
+      }
+      .sub1 .img{
+        width: 80%;
+        border:1px solid rgb(245, 242, 242);
+      }
+      .sub1 button{
+        width: 40%;
+        padding:3%;
+        justify-content: space-around;
+        border:none;
+        border-radius:5px;
+
+      }
+      .btn1{
+        background-color: #FF9F00;
+        color:#fff;
+      }
+      .btn2{
+        background-color: #FB641B;
+        color:#fff;
+      }
+      .smallimg{
+        display:flex;
+        flex-direction: column;
+        width:15%;
+        padding-left:1%;
+      }
+      .image{
+        display:flex;
+      }
+      .sub2{
+        width:60%;
+        background-color: #fff;
+        padding:1%;
+        border:1px solid rgb(245, 242, 242);
+      }
+      /* footer */
+      .Footer {
+        display:flex;
+        justify-content: space-around;
+        background-color: black;
+        color:white;
+        font-weight: 700px;
+        padding:1%;
+      }
+      a {
+        text-decoration: None;
+        color:white;
+        font-weight: 200px;
+      }
+      a:hover {
+        color:white;
+        text-decoration: underline;
+      }
+      .last {
+        background-color: black;
+        color:white;
+        display: flex;
+        justify-content: space-around;
+        font-weight: 600px;
+        border-top: 1px solid rgb(97, 92, 92);
+        padding:1% 5%;
+      }
+      /* footer */
+      body {
+        background-color: #F1F3F6;
+      }
+      </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul style="list-style-type: none">
+              <div>
+                <li style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;color:white"><b><i>Flipkart</i></b></li>
+                <li style="font-style: italic; color: rgb(219, 205, 217)">
+                  <b>Explore</b>
+                  <span style="color: rgb(232, 232, 75)"><b>Plus</b></span>
+                </li>
+              </div>
+              <li>
+                <input
+                  type="search"
+                  placeholder="search for products,brands and more"
+                  id="search" /></li>
+              </li>
+              <li style="font-size: larger; margin-top: 10px;color: white">
+                <a class="asdfg" href="http://127.0.0.1:5500/Seller.html"><b>Become a seller</b></a>
+              </li>
+              <li><div class="dropdown" style="margin-top:14px;">
+                <button class="dropbtn"><a href="http://127.0.0.1:5501/login.html" class="signin"><b>Vamsi Krishna Akula</b></a></button>
+                <div class="dropdown-content">
+                  <a href="#">My Profile</a>
+                  <a href="#">Flipkart Plus Zone</a>
+                  <a href="#">Orders</a>
+                  <a href="#">Wishlist</a>
+                  <a href="#">Rewards</a>
+                  <a href="#">Giftcards</a>
+                </div>
+              </div></li>
+              <li><div class="dropdown">
+                <button class="dropb" style="font-size: 15px;margin-top: 19px;"><b>More</b></button>
+                <div class="dropdown-content">
+                  <a href="#">Notification Preference</a>
+                  <a href="#">24*7 Customer Care</a>
+                  <a href="#">Advertise</a>
+                  <a href="#">Download</a>
+                </div>
+              </div></li>
+              <li style="font-size: larger; margin-top: 10px; color: white"><a class="dropb"href="http://127.0.0.1:5500/cart.html"><b><img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-royal-brites-poster-foam-board-photo-paper-royal-lace-19.png" alt=""width="25px"> Cart</b></a></li>
+            </ul>
+          </nav>
+    </div>
+    <div class="categeories">
+        <h5>Electronics</h5>
+        <h5>Tvs & Appliances</h5>
+        <h5>Fashion</h5>
+        <h5>Mobiles</h5>
+        <h5>Men</h5>
+        <h5>Women</h5>
+        <h5>Baby&Kids</h5>
+        <h5>Furniture</h5>
+        <h5>Others</h5>
+    </div>
+    <div class="total">
+        <div class="sub1">
+            <div class="image">
+                <div class="smallimg">
+                    <img src="https://rukminim2.flixcart.com/image/128/128/xif0q/mobile/k/u/n/-original-imagzjhwtfthcmzz.jpeg?q=70" alt="">
+                    <img src="https://rukminim2.flixcart.com/image/128/128/xif0q/mobile/o/m/o/-original-imagzjhwcbb6yugf.jpeg?q=70" alt="">
+                    <img src="https://rukminim2.flixcart.com/image/128/128/xif0q/mobile/u/w/y/-original-imagzjhwgakvhahv.jpeg?q=70" alt="">
+                    <img src="https://rukminim2.flixcart.com/image/128/128/xif0q/mobile/v/p/q/-original-imagzjhwkgvefqrm.jpeg?q=70" alt="">
+                    <img src="https://rukminim2.flixcart.com/image/128/128/xif0q/mobile/c/i/g/-original-imagq3tyhzayxetq.jpeg?q=70" alt="">
+                    <img src="https://rukminim2.flixcart.com/image/128/128/xif0q/mobile/m/c/m/-original-imagzjhwhefz7xh9.jpeg?q=70" alt="">
+                </div>
+            <img class="img"src="https://ovantica.com/pub/media/catalog/product/cache/359e51c8e354c4e2b5af98e814f93978/s/2/s21www_1_.jpg" alt="">
+        </div>
+            <div style="display: flex;justify-content: space-around;margin-left:13%;margin-top:2%;margin-bottom:2%;">
+            <button class="btn1">ADD TO CART</button>
+            <button class="btn2">BUY NOW</button>
+        </div>
+        </div>
+        <div class="sub2">
+            <h4>Samsung Galaxy S21 (Marine Blue, 128 GB)  (6 GB RAM)</h4>
+            <div style="display: flex;">
+            <button style="background-color: #388E3C;border:none;border-radius: 3px;color:white;width:5%;height:2%;margin-top: 2%;">4.4*</button>
+            <p>1,09,171 Ratings & 6,090 Reviews</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu3xGHVKdTIL1kg581y9V39R8svUtdNykzB5sXQlKbJY7d7rITb2IAU7i001T_48GTCA&usqp=CAU" width="10%">
+            </div>
+            <p style="color: #388E3C;">Extra 5000 Off</p>
+            <div style="display:flex">
+            <h1 style="margin-top:0%;">₹13,999</h1>
+            <p style="color:rgb(169, 167, 167)">&nbsp;&nbsp;₹18,999&nbsp;</p>
+            <p style="color: #388E3C;">26% off</p>
+            </div>
+            <p>Available Offers</p>
+            <p> <img src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90" alt="" width="3%"> Bank OfferFlat ₹1,000 off on HDFC Bank Credit Card EMI Trxns on orders priced between ₹15,000 to ₹49,999T&C <br> <img src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90" alt="" width="3%">
+                Bank OfferFlat ₹3,000 off on HDFC Bank Credit Card EMI Trxns on orders priced ₹50,000 and aboveT&C <br><img src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90" alt="" width="3%">
+                Bank OfferFlat ₹1,000 off on HDFC Bank Debit Card EMI Trxns on orders priced between ₹15,000 to ₹49,999T&C <br><img src="https://rukminim2.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90" alt="" width="3%">
+                Special PriceGet extra ₹5000 off (price inclusive of cashback/coupon)T&C</p>
+                <p>View More</p>
+                <table style="border:1px solid rgb(216, 212, 212);width:50%;border-radius: 2px;">
+                    <tr>
+                        <td><input type="radio"></td>
+                        <td>Buy Without Exchange</td>
+                        <td>₹13,999</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio"></td>
+                        <td>Buy With Exchange <br>Vivo V15 <br>Exchange Value Upto ₹10000</td>
+                        <td>₹3,999</td>
+                    </tr>
+                </table>
+                <table style="width:80%">
+                    <tr>
+                        <td style="color:rgb(177, 173, 173)">Highlights</td>
+                        <td><ul style="display:flex;flex-direction: column;">
+                            <li>6 GB RAM | 128 GB ROM</li>
+                            <li>16.71 cm (6.58 inch) Full HD+ Display</li>
+                            <li>50MP + 2MP | 8MP Front Camera</li>
+                            <li>5000 mAh Battery</li>
+                            <li>Dimensity 6020 Processor</li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td style="color:rgb(177, 173, 173)">Easy Payment Option</td>
+                        <td><ul style="display:flex;flex-direction: column;">
+                            <li>EMI starting from ₹493/month</li>
+                            <li>Cash on Delivery</li>
+                            <li>Net banking & Credit/ Debit/ ATM card</li>
+                        </ul></td>
+                    </tr>
+                    <tr>
+                        <td style="color:rgb(177, 173, 173)">Seller</td>
+                        <td><ul style="display:flex;flex-direction: column;">
+                            <li>7 Days Service Center Replacement/Repair</li>
+                            <li>GST invoice available</li>
+                        </ul></td>
+                    </tr>
+                </table>
+                <img src="https://images.freekaamaal.com/post_images/1659940249.webp" alt="" width="50%">
+                <table>
+                    <tr>
+                        <td style="color:rgb(177, 173, 173)">Description</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consequuntur eaque impedit repudiandae ipsum amet odit quisquam nihil laboriosam, harum ad a iste illo saepe fugit iusto quod repellendus dolores accusantium? A impedit sint eaque quaerat ipsa mollitia natus, magnam animi sed saepe itaque inventore! Cupiditate quae, distinctio dolore odit reiciendis unde minus saepe iusto ipsa assumenda error reprehenderit doloremque. Eligendi, laborum magni sit quidem amet non? Cumque necessitatibus iusto quae aperiam, et eum modi animi officia adipisci sit nam sapiente doloremque distinctio dolores ipsam libero eligendi? Laboriosam, vel id cum est deleniti maiores voluptates delectus quasi rem ab incidunt?</td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+    <div class="Footer">
+        <div class="foot">
+          <h4>ABOUT</h4>
+          <a href="#">Contact US</a> <br>
+          <a href="#">About US</a> <br> 
+          <a href="#">Carrers</a> <br>
+          <a href="#">Flipkart Store</a> <br>
+          <a href="#">Flipkart Wholesale</a> <br>
+          <a href="#">Coperate Infromation</a> <br>
+        </div>
+        <div class="foot">
+          <h4>HELP</h4>
+          <a href="#">Payment</a> <br>
+          <a href="#">Shipping</a> <br>
+          <a href="#">Cancelation</a> <br>
+          <a href="#">FAQ's</a> <br>
+          <a href="#">Report</a> <br>
+          <a href="#">Return</a> <br>
+        </div>
+        <div class="foot">
+          <h4>Consumer Policy</h4>
+          <a href="#">cancelation</a> <br>
+          <a href="#">Return</a> <br>
+          <a href="#">Terms Of Use</a> <br>
+          <a href="#">Security</a> <br>
+          <a href="#">Privacy</a> <br>
+          <a href="#">SiteMap</a> <br>
+        </div>
+        <div class="foot">
+          <h4>SOCIAL</h4>
+          <a href="#">Facebook</a> <br>
+          <a href="#">Twitter</a> <br>
+          <a href="#">Youtube</a> <br>
+        </div>
+        <div>
+          <h4>Mail Us:</h4>
+          <p>Flipkart internet PVT Ltd, <br>Buildings Alyssa,Begonia <br>&clove embassy tech village <br>Outer Ringroad,Benguluru <br>560103 karnataka <br> india</p>
+        </div>
+        <div>
+          <h4>Registered Office Address</h4>
+          <p>Flipkart internet PVT Ltd, <br>Buildings Alyssa,Begonia <br>&clove embassy tech village <br>Outer Ringroad,Benguluru <br>560103 karnataka <br> india <br>CIN:298234234878432 <br>telephone:040-2334-3248</p>
+        </div>
+      </div>
+      <div class="last">
+        <p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE2IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTJoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTUuOTMgNS42MTRoLTIuOTQ4VjQuMTRjMC0uODE4LS42NTUtMS40NzMtMS40NzMtMS40NzNIOC41NmMtLjgxNyAwLTEuNDczLjY1NS0xLjQ3MyAxLjQ3M3YxLjQ3NEg0LjE0Yy0uODE4IDAtMS40NjYuNjU2LTEuNDY2IDEuNDc0bC0uMDA3IDguMTA1YzAgLjgxOC42NTUgMS40NzQgMS40NzMgMS40NzRoMTEuNzljLjgxOCAwIDEuNDc0LS42NTYgMS40NzQtMS40NzRWNy4wODhjMC0uODE4LS42NTYtMS40NzQtMS40NzQtMS40NzR6bS00LjQyMSAwSDguNTZWNC4xNGgyLjk0OHYxLjQ3NHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC0yKSIvPgogICAgPC9nPgo8L3N2Zz4K" alt="">  Become a seller</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Advertise</p>
+        <p><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/gift-cards-image-d7ff24.svg" alt="">  Giftcard</p>
+        <p><img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-c4ace8.svg" alt="">  Helpcenter</p>
+        <p>2007-2023 flipkart.com</p>
+        <img style="margin-left: 100px;" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg" alt="">
+      </div>
+</body>
+</html>
