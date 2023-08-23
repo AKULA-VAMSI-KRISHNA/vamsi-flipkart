@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Added item to cart</title>
+    <style>
+        /* nav bar */
+        nav {
+            background-color: #2874F0;
+        }
+        #search {
+        width: 100%;
+        height: 50px;
+        background-color: #f0f5ff;
+        border: none;
+        border-radius: 5px;
+        }
+        ul {
+            display:grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            justify-content: space-around;
+            padding:10px;
+        }
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        /* margin-top:15px; */
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 160px;
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {background-color: #F0F5FF;}
+      .dropdown:hover .dropdown-content {display: block;}
+      .dropdown:hover .dropbtn {background-color:white;color:#2874F0}
+      .dropbtn{
+        background-color: #2874F0;
+        color:white;
+        padding:5px 10px;
+        border:none;
+        font-size: 15px;
+      }
+      .dropbt {
+        background-color: white;
+        border:none;
+      }
+      .dropbt:hover {
+        color:blue;
+      }
+      .signin {
+        background-color: #2874F0;
+        color:#fff;
+        text-decoration: none;
+      }
+      .signin:hover{
+        background-color: white;
+        color:#2874F0;
+      }
+      .asdfg, .dropb{
+        background-color: #2874F0;
+        color:#fff;
+        text-decoration: none;
+        margin-left: 30px;
+        border:none;
+      }
+      .asdfg:hover,.dropb:hover {
+        background-color: white;
+        color:#2874F0;
+      }
+      /* nav bar */
+      body{
+        background-color: #F1F3F6;
+      }
+      .total {
+        width:80%;
+        margin-left: 10%;
+        display:flex;
+      }
+      .sub1{
+        width:70%;
+      }
+      .sub11 {
+        background-color: white;
+        padding:1%;
+      }
+      .sub12{
+        background-color: white;
+        margin-top: 1%;
+        margin-bottom: 1%;
+      }
+      .sub12 tr{
+        display:grid;
+        grid-template-columns: 1fr 2fr 1fr;
+      }
+      .btn {
+        float:right;
+        color:white;
+        background-color: #FF9F00;
+        padding:1.5% 8%;
+        border:none;
+      }
+      .sub13{
+        background-color: #F4F8FF;
+        margin:2% 5%;
+        border:1px solid rgb(228, 222, 222);
+        padding:2%;
+      }
+      .btn1{
+        color:white;
+        background-color: #FB641B;
+        padding:1.5% 6%;
+        border:none;
+        display:flex;
+        justify-content: right;
+        margin-left: 70%;
+      }
+      .sub14 {
+        background-color: white;
+        width:100%;
+        padding:2.5% 0%;
+      }
+      .sub2 {
+        width:30%;
+        background-color: white;
+        height:20%;
+        margin-left: 1%;
+      }
+      .sub2 td{
+        padding:3%;
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul style="list-style-type: none">
+              <div>
+                <li style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;color:white"><b><i>Flipkart</i></b></li>
+                <li style="font-style: italic; color: rgb(219, 205, 217)">
+                  <b>Explore</b>
+                  <span style="color: rgb(232, 232, 75)"><b>Plus</b></span>
+                </li>
+              </div>
+              <li>
+                <input
+                  type="search"
+                  placeholder="search for products,brands and more"
+                  id="search" /></li>
+              </li>
+              <li><div class="dropdown" style="margin-top:14px;">
+                <button class="dropbtn"><a href="Login1flipkart.html" class="signin"><b>Vamsi Krishna Akula</b></a></button>
+                <div class="dropdown-content">
+                  <a href="#">My Profile</a>
+                  <a href="#">Flipkart Plus Zone</a>
+                  <a href="#">Orders</a>
+                  <a href="#">Wishlist</a>
+                  <a href="#">Rewards</a>
+                  <a href="#">Giftcards</a>
+                </div>
+            </ul>
+          </nav>
+    </div>
+    <div class="total">
+        <div class="sub1">
+            <div class="sub11">
+                <p>deliver to:<b>vamsi krishna akula, 522508</b><span style="background-color: #F0F2F5;">home</span></p>
+                <button style="float:right;padding:1%;background-color:white;border:1px solid rgb(216, 211, 211);color:#2874F0">change</button>
+                <p style="color:#5f5f60;">10-3,namburu,peddakakani mandal,guntur</p>
+            </div>
+            <div class="sub12">
+                <table>
+                    <tr>
+                <td><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70" alt=""height="80%"width="80%"></td>
+                <td>
+                    <div>
+                    <h4>Oppo Remo 8T 5G (Marine Blue, 128 GB)  (8 GB RAM)</h4></h4>
+                    <p>seller:sv pheripharals</p>
+                    <div style="display:flex">
+                        <h1 style="margin-top:0%;">₹33,999</h1>
+                        <p style="color:rgb(169, 167, 167)">&nbsp;&nbsp;₹38,999&nbsp;</p>
+                        <p style="color: #388E3C;">26% off</p>
+                        </div>
+                   </div>
+                </td>
+                <td>
+                    <p>Delivery by Thu Sep 7 | Free₹40</p>
+                </td>
+            </tr>
+            </table>
+            <div class="sub13">
+                <p><b>conplete mobile protection</b></p>
+                <p> extended two years warrenty</p>
+                <button class="btn">Add item</button>
+                <div style="display:flex">
+                    <h3 style="margin-top:1.5%;">₹699</h3>
+                    <p style="color:rgb(169, 167, 167)">&nbsp;&nbsp;₹999&nbsp;</p>
+                    <p style="color: #388E3C;">26% off</p>
+                    </div>
+                    <p>Get Extra Year additional warranty coverage beyond <br> the regular Brand WarrantyKnow More</p>
+               </div>
+            </div>
+            <div class="sub14"><button class="btn1">PLACE ORDER</button>
+            </div> 
+        </div>
+        <div class="sub2">
+            <table>
+                <tr>
+                    <td colspan="2" style="color:rgb(199, 198, 198)">PRICE DETAILS</td>
+                </tr>
+                <tr>
+                    <td>Price (1 item)</td>
+                    <td>₹38,999</td>
+                </tr>
+                <tr>
+                    <td>Discount</td>
+                    <td>₹5000</td>
+                </tr>
+                <tr>
+                    <td>Delivery Charges</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><h3>TOTAL AMOUNT</h3></td>
+                    <td><h3>₹33,999</h3></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="color:#388E3C"><b>You will save ₹5000 on this order</b></td>
+                </tr>
+            </table>
+            <p style="color:rgb(148, 145, 145);background-color: #F1F3F6;margin-bottom: 0px;padding:5%">Safe and Secure Payments.Easy returns.100% <br> Authentic products.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

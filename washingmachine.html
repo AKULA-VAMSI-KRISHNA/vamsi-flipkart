@@ -161,6 +161,40 @@
       body {
         background-color: #F1F3F6;
       }
+      @media screen and (min-width:100px) {
+        .Footer {
+          display:flex;
+          flex-wrap: wrap;
+        }
+      }
+      @media screen and (min-width:100px) {
+        .last {
+          display:flex;
+          flex-wrap: wrap;
+        }
+      }
+      @media screen and (max-width:1000px) {
+        .total {
+          display:flex;
+          flex-wrap: wrap;
+        }
+        .sub1 {
+          width:100%;
+        }
+        .sub2 {
+          width:100%;
+        }
+      }
+      @media screen and (max-width:1000px) {
+        #search {
+          display:none;
+        }
+      }
+      @media screen and (min-width:1000px) {
+        #search {
+          width:100%;
+        }
+      }
       </style>
 </head>
 <body>
@@ -181,10 +215,10 @@
                   id="search" /></li>
               </li>
               <li style="font-size: larger; margin-top: 10px;color: white">
-                <a class="asdfg" href="http://127.0.0.1:5500/Seller.html"><b>Become a seller</b></a>
+                <a class="asdfg" href="Sellerflipkart.html"><b>Become a seller</b></a>
               </li>
               <li><div class="dropdown" style="margin-top:14px;">
-                <button class="dropbtn"><a href="http://127.0.0.1:5501/Login1flipkart.html" class="signin"><b>Vamsi Krishna Akula</b></a></button>
+                <button class="dropbtn"><a href="Login1flipkart.html" class="signin"><b>Vamsi Krishna Akula</b></a></button>
                 <div class="dropdown-content">
                   <a href="#">My Profile</a>
                   <a href="#">Flipkart Plus Zone</a>
@@ -203,7 +237,7 @@
                   <a href="#">Download</a>
                 </div>
               </div></li>
-              <li style="font-size: larger; margin-top: 10px; color: white"><a class="dropb"href="http://127.0.0.1:5500/cart.html"><b><img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-royal-brites-poster-foam-board-photo-paper-royal-lace-19.png" alt=""width="25px"> Cart</b></a></li>
+              <li style="font-size: larger; margin-top: 10px; color: white"><a class="dropb"href="cartflipkart.html"><b><img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-royal-brites-poster-foam-board-photo-paper-royal-lace-19.png" alt=""width="25px"> Cart</b></a></li>
             </ul>
           </nav>
     </div>
@@ -232,7 +266,7 @@
             <img class="img"src="https://rukminim2.flixcart.com/image/312/312/xif0q/washing-machine-new/z/l/l/-original-imags7tpwaxawghz.jpeg?q=70" alt="" height="400px">
         </div>
             <div style="display: flex;justify-content: space-around;margin-left:13%;margin-top:2%;margin-bottom:2%;">
-            <button class="btn1">ADD TO CART</button>
+            <button class="btn1" id="myCart">ADD TO CART</button>
             <button class="btn2">BUY NOW</button>
         </div>
         </div>
@@ -354,5 +388,13 @@
         <p>2007-2023 flipkart.com</p>
         <img style="margin-left: 100px;" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg" alt="">
       </div>
+      <script>
+        var cart = document.getElementById("myCart");
+
+        cart.onclick = function() {
+        // Redirect to the next page
+        window.location.href = "http://127.0.0.1:5501/cartitemwashingmachine.html";
+      };
+      </script>
 </body>
 </html>
