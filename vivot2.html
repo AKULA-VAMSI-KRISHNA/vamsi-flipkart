@@ -9,7 +9,7 @@
             background-color: #2874F0;
         }
         #search {
-        width: 700px;
+        width: 180%;
         height: 50px;
         background-color: #f0f5ff;
         border: none;
@@ -190,7 +190,7 @@
           display:none;
         }
       }
-      @media screen and (min-width:1000px) {
+      @media screen and (max-width:1200px) {
         #search {
           width:100%;
         }
@@ -267,7 +267,7 @@
         </div>
             <div style="display: flex;justify-content: space-around;margin-left:13%;margin-top:2%;margin-bottom:2%;">
             <button class="btn1" id="myCart">ADD TO CART</button>
-            <button class="btn2">BUY NOW</button>
+            <button class="btn2" id="myCheck">BUY NOW</button>
         </div>
         </div>
         <div class="sub2">
@@ -390,11 +390,15 @@
       </div>
       <script>
         var cart = document.getElementById("myCart");
+        var checkout = document.getElementById("myCheck")
 
         cart.onclick = function() {
         // Redirect to the next page
-        window.location.href = "http://127.0.0.1:5501/cartitemvivo.html";
+        window.location.href = "cartitemvivo.html";
       };
+      checkout.onclick = function() {
+        window.location.href = "checkoutvivot2.html";
+      }
       </script>
 </body>
 </html>
