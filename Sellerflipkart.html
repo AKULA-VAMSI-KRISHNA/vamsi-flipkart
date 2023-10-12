@@ -98,12 +98,12 @@
       .ab {
         margin: 10px 150px;
         display:flex;
-        width:1500px;
+        width:100%;
       }
       a {
-        width:600px;
+        width:30%;
         padding-left:10px;
-        padding-right:300px;
+        /* padding-right:300px; */
       }
       .a h5:hover{
         font-size: 20px;
@@ -112,7 +112,7 @@
         color:rgb(122, 118, 118);
       }
       .b {
-        width:900px;
+        width:50%;
         margin-left: 200px;
       }
       .h{
@@ -144,6 +144,34 @@
       }
       .f ul{
         list-style-type: none;
+      }
+      @media screen and (max-width:700px){
+        .ab {
+          display:flex;
+          flex-direction: row;
+        }
+      }
+      @media screen and (max-width:500px){
+        .y {
+          display:flex;
+          flex-wrap: wrap;
+        }
+      }
+      @media screen and (max-width:500px){
+        .x img {
+          width:100vw;
+        }
+      }
+      @media screen and (max-width:500px){
+        .v,.w {
+          font-size:10px;
+        }
+      }
+      @media screen and (max-width:500px){
+        .dropdown {
+          display:flex;
+          flex-direction: column;
+        }
       }
     </style>
   </head>

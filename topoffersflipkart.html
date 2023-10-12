@@ -200,7 +200,7 @@
         <nav>
             <ul style="list-style-type: none">
               <div>
-                <li style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;color:white"><b><i>Flipkart</i></b></li>
+                <li style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;color:white" id="flipkart"><b><i>Flipkart</i></b></li>
                 <li style="font-style: italic; color: rgb(219, 205, 217)">
                   <b>Explore</b>
                   <span style="color: rgb(232, 232, 75)"><b>Plus</b></span>
@@ -496,6 +496,12 @@
       var image4 = document.getElementById("myImage4");
       var image5 = document.getElementById("myImage5");
       var image6 = document.getElementById("myImage6");
+      var home=document.getElementById("flipkart");
+
+home.onclick = function() {
+// Redirect to the next page
+window.location.href = "index.html";
+};
       
       // for image1
       image1.onclick = function() {
@@ -527,6 +533,7 @@
           // Redirect to the next page
           window.location.href = "opporeno.html";
       };
+      
     </script>
 </body>
 </html>

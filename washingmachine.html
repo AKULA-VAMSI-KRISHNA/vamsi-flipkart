@@ -202,7 +202,7 @@
         <nav>
             <ul style="list-style-type: none">
               <div>
-                <li style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;color:white"><b><i>Flipkart</i></b></li>
+                <li style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;color:white" id="flipkart"><b><i>Flipkart</i></b></li>
                 <li style="font-style: italic; color: rgb(219, 205, 217)">
                   <b>Explore</b>
                   <span style="color: rgb(232, 232, 75)"><b>Plus</b></span>
@@ -391,6 +391,12 @@
       <script>
         var cart = document.getElementById("myCart");
         var checkout = document.getElementById("myCheck");
+        var home=document.getElementById("flipkart");
+
+home.onclick = function() {
+// Redirect to the next page
+window.location.href = "index.html";
+};
 
         cart.onclick = function() {
         // Redirect to the next page

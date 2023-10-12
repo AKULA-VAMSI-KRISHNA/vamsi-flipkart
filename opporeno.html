@@ -203,7 +203,7 @@
         <nav>
             <ul style="list-style-type: none">
               <div>
-                <li style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;color:white"><b><i>Flipkart</i></b></li>
+                <li style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;color:white" id="flipkart"><b><i>Flipkart</i></b></li>
                 <li style="font-style: italic; color: rgb(219, 205, 217)">
                   <b>Explore</b>
                   <span style="color: rgb(232, 232, 75)"><b>Plus</b></span>
@@ -268,7 +268,7 @@
         </div>
             <div style="display: flex;justify-content: space-around;margin-left:13%;margin-top:2%;margin-bottom:2%;">
             <button class="btn1" id="myCart">ADD TO CART</button>
-            <button class="btn2" id="mycheck">BUY NOW</button>
+            <button class="btn2" id="myCheck">BUY NOW</button>
         </div>
         </div>
         <div class="sub2">
@@ -391,7 +391,13 @@
       </div>
       <script>
         var cart = document.getElementById("myCart");
-        var checkout = document.getElementById("myCheck")
+        var checkout = document.getElementById("myCheck");
+        var home=document.getElementById("flipkart");
+
+home.onclick = function() {
+// Redirect to the next page
+window.location.href = "index.html";
+};
 
         cart.onclick = function() {
         // Redirect to the next page
@@ -400,6 +406,7 @@
       checkout.onclick = function() {
         window.location.href = "checkoutvivot2.html";
       }
+      
       </script>
 </body>
 </html>

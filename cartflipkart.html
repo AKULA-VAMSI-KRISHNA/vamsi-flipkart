@@ -106,13 +106,38 @@
     body{
         background-color: #F1F3F6;
     }
+    @media screen and (max-width:700px){
+      nav{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width:100vw;
+        margin:0px;
+      }
+    }
+    @media screen and (max-width:1000px){
+      #search{
+        display: none;
+      }
+    }
+    @media screen and (max-width:700px){
+      .a{
+        width:100vw;
+        margin:0px;
+      }
+    }
+    @media screen and (max-width:700px){
+      .b{
+        width:100vw;
+        margin:0px;
+      }
+    }
       </style>
 </head>
 <body>
         <nav>
             <ul style="list-style-type: none">
                 <div>
-                    <li style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;color:white"><b><i>Flipkart</i></b></li>
+                    <li style="font-family: Arial, Helvetica, sans-serif;font-size: 25px;color:white" id="flipkart"><b><i>Flipkart</i></b></li>
                   <li style="font-style: italic; color: rgb(243, 86, 220)">
                     <b>Explore</b>
                     <span style="color: rgb(232, 232, 75)"><b>Plus</b></span>
@@ -141,14 +166,22 @@
             <button class="btn2"><a href="cart2flipkart.html">Grocery</a></button>
         </div>
         <div class="b">
-            <img src="cart.png" alt="" style="margin-left: 330px;">
-            <h3 style="margin-left: 400px;">Missing Cart items?</h3>
-            <p style="margin-left: 350px;">Login to see the items you added previously</p>
-            <button style="margin-left: 430px;">Login</button>
+            <img src="cart.png" alt="" style="margin-left: 33%;">
+            <h3 style="margin-left: 40%;">Missing Cart items?</h3>
+            <p style="margin-left: 35%;">Login to see the items you added previously</p>
+            <button style="margin-left: 40%;">Login</button>
         </div>
         <div class="c">
             <p>Policies:Returns Policy  |  Terms of use  |  Security  |  PrivacyInfringement  |  © 2007-2023 Flipkart.com</p>
             <p>Need help? Visit the Help Center or Contact Us</p>
         </div>
+        <script>
+          var home=document.getElementById("flipkart");
+
+          home.onclick = function() {
+        // Redirect to the next page
+        window.location.href = "index.html";
+      };
+        </script>
 </body>
 </html>
